@@ -53,3 +53,28 @@
     font-size: 20px;
     margin-bottom: 75px;
 }
+
+/* CARD PRICING */
+.card-pricing .card__img {
+    padding-top: 100%; 
+    position: relative;
+    overflow: hidden;
+    object-position: center;
+}
+.card-pricing .card__img img {
+    position: absolute;   
+    object-position: center; 
+    top: 25% ; left: 25%;
+    width: 50%; height: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+.card-pricing .card__desc {
+    padding: 24px;
+    background-color: #fff;
+}
+.card-pricing .desc__title {
+    font-size: 20px;
+    margin-bottom: 75px;
+}
