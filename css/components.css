@@ -9,6 +9,7 @@
 .site-header .nav {
     display: flex;
     align-items: center;
+    font-family: -apple-system, Roboto, sans-serif;
 }
 
 .site-header .nav li:not(:last-child) {
