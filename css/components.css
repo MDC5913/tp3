@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px 30px;
+    font-family: -apple-system, Roboto, sans-serif;
 }
 .site-header .nav {
     display: flex;
