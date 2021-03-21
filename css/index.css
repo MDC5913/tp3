@@ -15,9 +15,14 @@ a {
   font-family: -apple-system, Roboto, sans-serif;
 }
 
+ul {
+list-style: none;
+}
+
 .collections {
   background-color: #F4F4F4;
   padding: 50px 30px; 
+  font-family: -apple-system, Roboto, sans-serif;
 }
 
 .collections-title {
