@@ -1,4 +1,4 @@
-{% macro show(title, subtitle, cta) %}
+{% macro show(title, subtitle, button buttonWhite, txt) %}
     <div class='card-pricing'>
         <div class='card__img'>
             <img src='https://www.fillmurray.com/300/360' />
@@ -11,7 +11,7 @@
                 <li>Feature 2</li>
                 <li>Feature 3</li>
             </ul>
-            <a class='cta cta--seemore'>{{ cta }}</a>
+            <a href='' class='{{ button button-white }}'>{{ txt }}</a>
         </div>
     </div>
 {% endmacro %}

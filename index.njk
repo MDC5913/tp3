@@ -3,20 +3,21 @@ layout: layouts/base.njk
 ---
 
 <div class='collections'>
-  <h1 class='collections-title'>à la une</h1>
+  <h1 class='collections-title'>En ce moment</h1>
 
   {# Ici j'importe mon composant, je vais le chercher dans includes>components et je le nomme en utilisant 'as'#}
   {% import "components/button.njk" as button %}
-  {% import "components/button.njk" as button-white %}
   {% import "components/card-blog.njk" as cardBlog %}
   {% import "components/card-pricing.njk" as cardPricing %}
+  {% import "components/card-square.njk" as cardSquare %}
 
   {# Ici je le montre et je modifie mon texte dans les ''#}
-  {{ button.show('See more') }}
-  {{ button-white.show ('See more') }}
+  {{ button.show ('button button-white', 'Texte') }} 
+  {{ button.show ('button', 'Texte') }}
 
   <div class='flex'>
   {{ cardBlog.show ('Special Feature', 'See more >') }}
-  {{ cardPricing.show ('Title', 'Subtitle', 'See more >') }}
+  {{ cardPricing.show ('Title', 'Subtitle', 'button-white button') }}
+  {{ cardSquare.show ('Ici figure mon texte', 'Learn More') }}
   </div>
 </div>

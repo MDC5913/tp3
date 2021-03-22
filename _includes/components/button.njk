@@ -1,7 +1,4 @@
-{% macro show(txt) %}
-    <a href='' class='button'>{{ txt }}</a>
+{% macro show(MaClasse, MonTexte) %}
+    <a href='' class='{{ MaClasse }}'>{{ MonTexte }}</a>
 {% endmacro %}
 
-{% macro show(txt) %}
-    <a href='' class='button-white'>{{ txt }}</a>
-{% endmacro %}
