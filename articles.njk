@@ -1,0 +1,28 @@
+---
+layout: layouts/base.njk
+---
+
+<div class='collections'>
+  <h1 class='collections-title'>Articles</h1>
+
+  {# Ici j'importe mon composant, je vais le chercher dans includes>components et je le nomme en utilisant 'as'#}
+  {% import "components/button.njk" as button %}
+  {% import "components/card-blog.njk" as cardBlog %}
+
+  {# Ici je le montre et je modifie mon texte dans les ''#}
+  {{ button.show('See more') }} 
+
+  <div class='flex'> 
+  {{ cardBlog.show ('Special Feature','black', 'Voir plus >') }}
+  {{ cardBlog.show ('Special Feature', 'black', 'Voir plus >') }}
+  {{ cardBlog.show ('Manon', '#f0000f', 'Voir plus >') }}
+  {{ cardBlog.show ('Manon', '#f0000f', 'Voir plus >') }}
+  </div>
+
+  <div class='flex'> 
+  {{ cardBlog.show ('Special Feature','blue', 'Voir plus >') }}
+  {{ cardBlog.show ('Special Feature', 'pink', 'Voir plus >') }}
+  {{ cardBlog.show ('Manon', '#f67542', 'Voir plus >') }}
+  {{ cardBlog.show ('Manon', '#f74263', 'Voir plus >') }}
+  </div>
+</div>

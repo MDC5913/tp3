@@ -7,13 +7,13 @@ layout: layouts/base.njk
 
   {# Ici j'importe mon composant, je vais le chercher dans includes>components et je le nomme en utilisant 'as'#}
   {% import "components/button.njk" as button %}
-  {% import "components/card-blog.njk" as cardBlog %}
+  {% import "components/card-square.njk" as cardSquare %}
 
   {# Ici je le montre et je modifie mon texte dans les ''#}
   {{ button.show('See more') }}
 
   <div class='flex'>
-  {{ cardBlog.show ('Special Feature', 'Voir plus >') }}
+  {{ cardSquare.show ('Special Feature', 'Voir plus >') }}
 
   </div>
 </div>

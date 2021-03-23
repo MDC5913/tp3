@@ -17,6 +17,9 @@ a {
 
 ul {
 list-style: none;
+color: rgba(0, 0, 0, 0.5);
+text-align: center;
+line-height: 34px;
 }
 
 .collections {
@@ -27,7 +30,7 @@ list-style: none;
 
 .collections-title {
   margin-bottom: 40px;
-  font-size: 28px;
+  font-size: 28px; 
 }
 
 .collections .flex {

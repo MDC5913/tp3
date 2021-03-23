@@ -10,14 +10,18 @@ layout: layouts/base.njk
   {% import "components/card-blog.njk" as cardBlog %}
   {% import "components/card-pricing.njk" as cardPricing %}
   {% import "components/card-square.njk" as cardSquare %}
+  {% import "components/card-citation.njk" as cardCitation %}
 
   {# Ici je le montre et je modifie mon texte dans les ''#}
   {{ button.show('button button-white', 'Texte') }} 
   {{ button.show('button', 'Texte') }}
 
+  
+ 
   <div class='flex'>
-  {{ cardBlog.show ('Special Feature', 'See more >') }}
-  {{ cardPricing.show ('Title', 'Subtitle', 'button-white button') }}
+  {{ cardBlog.show ('Special Feature', 'black', 'See more >') }} 
+  {{ cardPricing.show ('Musique', 'sousTitre', 'Mes titres préférés', 'button-white button smallText', 'Écouter') }}
   {{ cardSquare.show ('Ici figure mon texte', 'Learn More') }}
+  {{ cardCitation.show ("Votre temps est limité, ne le gâchez pas en menant une existence qui n'est pas la vôtre.", 'Steve Jobs') }}
   </div>
 </div>

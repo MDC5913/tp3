@@ -1,17 +1,17 @@
-{% macro show(title, subtitle, button, buttonWhite, txt) %}
+{% macro show(title, sousTitre, subtitle, class, txt) %}
     <div class='card-pricing'>
         <div class='card__img'>
             <img src='https://www.fillmurray.com/300/360' />
         </div>
         <div class='card__desc'>
             <h2 class='desc__title'>{{ title }}</h2>
-            <h3 class='desc__title'>{{ subtitle }}</h2>
+            <h3 class='desc__title sousTitre'> {{subtitle }}</h3>
             <ul>
                 <li>Feature 1</li>
                 <li>Feature 2</li>
                 <li>Feature 3</li>
             </ul>
-            <a href='' class='{{ button button-white }}'>{{ txt }}</a>
+            <a href='' class='{{ class }}'>{{ txt }}</a>
         </div>
     </div>
 {% endmacro %}

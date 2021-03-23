@@ -72,43 +72,59 @@
 
 /*Mon texte */
 .card-blog .card__desc {
-    padding: 24px;
+    padding: 12px;
     background-color: #fff;
     font-family: -apple-system, Roboto, sans-serif;
 }
 .card-blog .desc__title {
     font-size: 20px;
-    margin-bottom: 75px;
+    margin-bottom: 20px;
     font-family: -apple-system, Roboto, sans-serif;
 }
 
 /* CARD PRICING */
 .card-pricing {
+    border: 1px solid #000000;
     border-radius: 2px;
 }
+
 .card-pricing .card__img {
-    padding-top: 100%; 
-    position: relative;
-    overflow: hidden;
-    object-position: center;
+    padding-top: 10px;  
+    background-color: white;
 }
+
 .card-pricing .card__img img {
-    position: absolute;   
-    object-position: center; 
-    top: 25% ; left: 25%;
-    width: 50%; height: 50%;
-    border-radius: 50%;
     object-fit: cover;
-    object-position: center;
+    height: 80px;
+    margin-left: 33%;
+    width: 80px; 
+    border-radius: 50%;
 }
+
 .card-pricing .card__desc {
+    text-align: center;
     padding: 24px;
     background-color: #fff;
+    border-radius: 2px;
 }
 .card-pricing .desc__title {
     font-size: 20px;
-    margin-bottom: 75px;
+    margin-bottom: 20px;
 }
+
+.smallText {
+    font-size: 14px;
+}
+
+.sousTitre {
+    font-size: 14px !important;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
 .card-button {
     background: white;
     border-radius: 5px;
@@ -120,8 +136,15 @@
     text-align: center;
 }
 
+
 /* CARD SQUARE */
 .card-square {
+    position: relative;
+    overflow: hidden;
+    min-width: 25%;
+}
+
+.card-square .card__img {
     padding-top: 100%; 
     position: relative;
     overflow: hidden;
@@ -135,6 +158,33 @@
     object-position: center;
 }
 
+/* CARD CITATION */
+.card-citation {
+    position: relative;
+    overflow: hidden;
+    width: 25%;
+}
+
+.citation {
+    color: black;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.auteur {
+    color: royalblue;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
 
 /* SITE FOOTER */
 .site-footer {
@@ -144,5 +194,12 @@
     padding: 20px 30px;
     font-family: -apple-system, Roboto, sans-serif;
     font-weight: 700;
-    font-size: 14px;
+    font-size: 14px; 
+}
+.black{
+    color: dark;
+}
+
+.pink{
+    color: pink;
 }

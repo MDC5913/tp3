@@ -1,0 +1,9 @@
+{% macro show(citation, auteur, class, txt) %}
+    <div class='card-citation'>
+        <div class='card__desc'>
+            <h2 class='citation'>"{{ citation }}"</h2>
+            <h3 class='auteur'>{{ auteur }}</h3>
+            <a href='' class='{{ class }}'>{{ txt }}</a>
+        </div>
+    </div> 
+{% endmacro %}
